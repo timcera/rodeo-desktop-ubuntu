@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 MAINTAINER Tim Cera <tim@cerazone.net>
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 33D40BC6
-RUN add-apt-repository "deb http://rodeo-deb.yhat.com/ rodeo main"
+RUN echo "deb http://rodeo-deb.yhat.com/ rodeo main\n" >> /etc/apt/sources.list
 
 RUN    apt-get -y update
 RUN    apt-get -y install rodeo
