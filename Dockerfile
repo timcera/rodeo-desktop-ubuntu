@@ -8,7 +8,7 @@ RUN    apt-get -y update
 RUN    apt-get -y install libxss1
 RUN    apt-get -y install libgconf-2-4
 RUN    apt-get -y install libnss3
-RUN    apt-get -y install libasound
+RUN    apt-get -y install libasound2
 RUN    apt-get -y install rodeo
 
 RUN    apt-get clean \
